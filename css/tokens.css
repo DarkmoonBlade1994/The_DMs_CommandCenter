@@ -1,0 +1,342 @@
+/* ==========================================================================
+   DM Hub — Design System Tokens (Multi-Tone Fantasy Palettes)
+   Dark Mode: Dark Lord (Obsidian Black, Deep Sovereign Red, Dark Burnt Orange
+              & Forged Iron Gray finishers)
+   Light Mode: Cheery Fantasy Adventure (Storybook Cream, Quest Sky Blue,
+               Shire Meadow Emerald, Sunlit Marigold Gold & Berry Crimson)
+   WCAG AA+ contrast across both modes.
+   ========================================================================== */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Dark Lord — Obsidian Black Primary, Forged Gray Surfaces, Deep Red & Burnt Orange Glow */
+  --bg-canvas: #070709;
+  --bg-canvas-glow-1: rgba(174, 24, 38, 0.2);
+  --bg-canvas-glow-2: rgba(196, 80, 22, 0.14);
+  --bg-canvas-glow-3: rgba(112, 116, 126, 0.09);
+  --bg-header-grad: linear-gradient(180deg, #1B1C20 0%, #101114 100%);
+  --bg-header: #141518;
+  --bg-overview-grad: linear-gradient(180deg, #191A1E 0%, #101114 100%);
+  --border-overview: #3C3E46;
+  --bg-surface: #0F0F12;
+  --bg-surface-grad: linear-gradient(180deg, #141418 0%, #0C0C0F 100%);
+  --bg-roller-grad: linear-gradient(180deg, #16161B 0%, #0D0D10 100%);
+  --bg-card-grad: linear-gradient(180deg, #18181D 0%, #101013 100%);
+  --bg-active-card-grad: linear-gradient(135deg, #2E0B12 0%, #1D0B0F 54%, #111114 100%);
+  --bg-turnbar-grad: linear-gradient(180deg, #21100C 0%, #140D0E 100%);
+  --border-turnbar: rgba(198, 82, 24, 0.56);
+  --bg-surface-elevated: #1E2025;
+  --bg-surface-hover: #2A2C33;
+  --bg-btn-grad: linear-gradient(180deg, #282A30 0%, #1B1C20 100%);
+  --bg-btn-hover-grad: linear-gradient(180deg, #353840 0%, #25272D 100%);
+  --bg-well: #09090B;
+  --bg-well-focus: #121216;
+  --bg-overlay: rgba(3, 3, 5, 0.84);
+
+  /* Forged Gunmetal Gray & Deep Crimson Rim Borders */
+  --border-subtle: #272930;
+  --border-default: #3C3F47;
+  --border-strong: #585C66;
+  --border-header: rgba(178, 26, 42, 0.52);
+  --border-accent: rgba(188, 28, 44, 0.72);
+  --inner-sheen: inset 0 1px 0 rgba(225, 228, 235, 0.065);
+
+  /* Crisp Bone-White & Ash-Gray Typography (WCAG AA+) */
+  --text-primary: #F2F2F4;
+  --text-secondary: #B8BBC2;
+  --text-muted: #8C9099;
+  --text-on-accent: #FFF7F7;
+  --text-on-strong: #FFF8F8;
+
+  /* Secondary Main Highlight — Deep Sovereign Red */
+  --accent-primary: #AE1B2A;
+  --accent-primary-hover: #C62435;
+  --accent-primary-grad: linear-gradient(180deg, #BF2233 0%, #89111E 100%);
+  --accent-primary-grad-hover: linear-gradient(180deg, #D22C3E 0%, #9E1625 100%);
+  --accent-primary-soft: rgba(174, 27, 42, 0.22);
+  --accent-primary-border: rgba(206, 38, 56, 0.6);
+  --accent-primary-text: #F47280;
+
+  /* Finisher 1 — Dark Burnt Orange */
+  --accent-secondary: #C65218;
+  --accent-secondary-soft: rgba(198, 82, 24, 0.2);
+  --accent-secondary-border: rgba(212, 94, 34, 0.55);
+  --accent-secondary-text: #EC8D58;
+
+  /* Banner / Turn Accent — Dark Burnt Orange */
+  --accent-gold: #C65218;
+  --accent-gold-soft: rgba(198, 82, 24, 0.2);
+  --accent-gold-border: rgba(212, 94, 34, 0.56);
+  --accent-gold-text: #F0945E;
+
+  /* Damage — Abyssal Blood Crimson */
+  --accent-crimson: #B81D2C;
+  --accent-crimson-grad: linear-gradient(180deg, #CC2838 0%, #921320 100%);
+  --accent-crimson-grad-hover: linear-gradient(180deg, #DE3647 0%, #A81A29 100%);
+  --accent-crimson-soft: rgba(184, 29, 44, 0.22);
+  --accent-crimson-border: rgba(216, 50, 66, 0.56);
+  --accent-crimson-text: #FF8E99;
+
+  /* Heal / Healthy — Deep Morgul Emerald */
+  --accent-emerald: #2C925C;
+  --accent-emerald-grad: linear-gradient(180deg, #36A66B 0%, #21784A 100%);
+  --accent-emerald-grad-hover: linear-gradient(180deg, #42B879 0%, #2A8B57 100%);
+  --accent-emerald-soft: rgba(44, 146, 92, 0.19);
+  --accent-emerald-border: rgba(44, 146, 92, 0.48);
+  --accent-emerald-text: #82E0AE;
+
+  /* Bloodied / Conditions — Dark Burnt Orange */
+  --accent-copper: #C65218;
+  --accent-copper-soft: rgba(198, 82, 24, 0.22);
+  --accent-copper-border: rgba(214, 96, 36, 0.55);
+  --accent-copper-text: #F0945E;
+
+  /* Finisher 2 — Forged Ash-Steel Gray (PC Tags & Temp HP) */
+  --accent-slate: #7E8794;
+  --accent-slate-soft: rgba(126, 135, 148, 0.22);
+  --accent-slate-border: rgba(146, 156, 170, 0.52);
+  --accent-slate-text: #CBD2DC;
+
+  /* Obsidian Fortress Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.62);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.72);
+  --shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.86);
+  --shadow-active: inset 4px 0 0 var(--accent-primary), inset 0 1px 0 rgba(235, 82, 98, 0.22), 0 8px 26px rgba(148, 14, 28, 0.36);
+
+  /* Typography */
+  --font-display: 'Palatino Linotype', 'Book Antiqua', Palatino, 'Iowan Old Style', Georgia, serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 0.94rem;
+  --text-md: 1.04rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.45rem;
+
+  /* Spacing & Geometry */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  --header-height: 58px;
+  --bottom-nav-height: 64px;
+  --touch-min: 44px;
+
+  --z-sticky: 20;
+  --z-header: 30;
+  --z-bottom-nav: 35;
+  --z-drawer-backdrop: 50;
+  --z-drawer: 55;
+  --z-popover: 65;
+  --z-modal-backdrop: 80;
+  --z-modal: 85;
+  --z-toast: 100;
+
+  --ease-fast: 140ms ease;
+  --ease-med: 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==========================================================================
+   Light Mode: Cheery Fantasy Adventure
+   Sunlit Storybook Cream, Quest Sky Blue, Shire Meadow Emerald,
+   Sunlit Marigold Gold & Berry Crimson
+   ========================================================================== */
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-canvas: #F5F1E6;
+  --bg-canvas-glow-1: rgba(48, 146, 232, 0.16);
+  --bg-canvas-glow-2: rgba(242, 184, 48, 0.15);
+  --bg-canvas-glow-3: rgba(38, 168, 102, 0.11);
+  --bg-header-grad: linear-gradient(180deg, #EAF4FF 0%, #D9EBFC 100%);
+  --bg-header: #E1F0FD;
+  --bg-overview-grad: linear-gradient(180deg, #F0F7FF 0%, #E5F1FC 100%);
+  --border-overview: #B5D2EF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-grad: linear-gradient(180deg, #FFFFFF 0%, #FCF9F1 100%);
+  --bg-roller-grad: linear-gradient(180deg, #FFFFFF 0%, #F5F8FD 100%);
+  --bg-card-grad: linear-gradient(180deg, #FFFFFF 0%, #FAF7EE 100%);
+  --bg-active-card-grad: linear-gradient(135deg, #E2F7EC 0%, #F1FBF5 56%, #FFFDF6 100%);
+  --bg-turnbar-grad: linear-gradient(180deg, #FFF7DF 0%, #FCEBC3 100%);
+  --border-turnbar: #E2B652;
+  --bg-surface-elevated: #EDF4FB;
+  --bg-surface-hover: #E0ECFA;
+  --bg-btn-grad: linear-gradient(180deg, #FFFFFF 0%, #EDF3FA 100%);
+  --bg-btn-hover-grad: linear-gradient(180deg, #F8FBFF 0%, #DFEBFA 100%);
+  --bg-well: #F2F5F9;
+  --bg-well-focus: #FFFFFF;
+  --bg-overlay: rgba(20, 36, 56, 0.42);
+
+  --border-subtle: #D5DFEA;
+  --border-default: #B9C9DB;
+  --border-strong: #92ABC4;
+  --border-header: #9AC3EA;
+  --border-accent: rgba(31, 143, 84, 0.56);
+  --inner-sheen: inset 0 1px 0 rgba(255, 255, 255, 0.92);
+
+  --text-primary: #18293A;
+  --text-secondary: #3F576E;
+  --text-muted: #5F758C;
+  --text-on-accent: #FFFFFF;
+  --text-on-strong: #FFFFFF;
+
+  /* Primary Accent — Shire Meadow Emerald */
+  --accent-primary: #1F8F54;
+  --accent-primary-hover: #187846;
+  --accent-primary-grad: linear-gradient(180deg, #28A664 0%, #197C48 100%);
+  --accent-primary-grad-hover: linear-gradient(180deg, #219659 0%, #146A3D 100%);
+  --accent-primary-soft: rgba(31, 143, 84, 0.13);
+  --accent-primary-border: rgba(31, 143, 84, 0.46);
+  --accent-primary-text: #136B3D;
+
+  /* Secondary Accent — Cerulean Quest Sky Blue */
+  --accent-secondary: #2274C7;
+  --accent-secondary-soft: rgba(34, 116, 199, 0.13);
+  --accent-secondary-border: rgba(34, 116, 199, 0.45);
+  --accent-secondary-text: #165699;
+
+  /* Tertiary Banner Accent — Sunlit Marigold Gold */
+  --accent-gold: #D48414;
+  --accent-gold-soft: rgba(224, 148, 28, 0.17);
+  --accent-gold-border: rgba(212, 132, 20, 0.5);
+  --accent-gold-text: #945705;
+
+  /* Damage — Banner Berry Crimson */
+  --accent-crimson: #CC2E40;
+  --accent-crimson-grad: linear-gradient(180deg, #DC3B4D 0%, #B22233 100%);
+  --accent-crimson-grad-hover: linear-gradient(180deg, #CA3042 0%, #9C1B2A 100%);
+  --accent-crimson-soft: rgba(204, 46, 64, 0.12);
+  --accent-crimson-border: rgba(204, 46, 64, 0.42);
+  --accent-crimson-text: #A31D2D;
+
+  /* Heal / Healthy — Spring Meadow Green */
+  --accent-emerald: #229A5D;
+  --accent-emerald-grad: linear-gradient(180deg, #2BAE6C 0%, #1C834F 100%);
+  --accent-emerald-grad-hover: linear-gradient(180deg, #249D60 0%, #167043 100%);
+  --accent-emerald-soft: rgba(34, 154, 93, 0.13);
+  --accent-emerald-border: rgba(34, 154, 93, 0.42);
+  --accent-emerald-text: #156E42;
+
+  /* Bloodied / Conditions — Warm Hearth Tangerine */
+  --accent-copper: #D96B1A;
+  --accent-copper-soft: rgba(217, 107, 26, 0.14);
+  --accent-copper-border: rgba(217, 107, 26, 0.45);
+  --accent-copper-text: #9B4608;
+
+  /* PC Tag & Temp HP — Royal Quest Sky Blue */
+  --accent-slate: #2274C7;
+  --accent-slate-soft: rgba(34, 116, 199, 0.13);
+  --accent-slate-border: rgba(34, 116, 199, 0.45);
+  --accent-slate-text: #165699;
+
+  --shadow-sm: 0 2px 5px rgba(24, 52, 82, 0.08);
+  --shadow-md: 0 6px 18px rgba(24, 52, 82, 0.1);
+  --shadow-lg: 0 16px 38px rgba(24, 52, 82, 0.18);
+  --shadow-active: inset 4px 0 0 var(--accent-primary), 0 6px 18px rgba(31, 143, 84, 0.17);
+}
+
+/* Base Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.45;
+  color: var(--text-primary);
+  background-color: var(--bg-canvas);
+  background-image:
+    radial-gradient(ellipse 68% 44% at 15% 0%, var(--bg-canvas-glow-1), transparent 72%),
+    radial-gradient(ellipse 65% 44% at 88% 4%, var(--bg-canvas-glow-2), transparent 70%),
+    radial-gradient(ellipse 75% 48% at 80% 100%, var(--bg-canvas-glow-3), transparent 70%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
